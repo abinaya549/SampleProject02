@@ -12,7 +12,7 @@ class Student(models.Model):
     last_name = models.CharField(max_length=32)
     email = models.EmailField(max_length=32)
     number = models.CharField(max_length=16)
-    image = models.FileField(null=True,blank=True,upload_to='images/')
+    image = models.FileField(null=True, blank=True, upload_to='images/')
     qualification_choices = [
         ('10th', '10th'),
         ('12th', '12th'),
@@ -24,5 +24,4 @@ class Student(models.Model):
         choices=qualification_choices,
         default=0,
     )
-    image = models.FileField(null=True, blank=True,)
     message = models.TextField()

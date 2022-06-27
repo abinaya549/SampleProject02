@@ -19,6 +19,8 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+#same for modelviews and Apiviews
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('sample_app.urls'))
